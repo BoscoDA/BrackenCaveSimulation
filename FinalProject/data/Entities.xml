@@ -1,0 +1,28 @@
+<environment type = "Cave" name = "Bracken Cave">
+    <entity type="Producer" name="Corn" species = "Zea mays saccharata" population = "40500">
+    </entity>
+    <entity type="Producer" name="Cotton" species = "Gossypium hirsutum" population = "16200">
+    </entity>
+    <entity type="Consumer" name="Corn Earworm" species = "Helicoverpa zea" population = "28000">
+    </entity>
+    <entity type="Consumer" name="Cotton Bollworm" species = "Helicoverpa zea" population = "28000">
+    </entity>
+    <entity type="Consumer" name="Brazilian Free-Tailed Bat" species = "Tadarida brasiliensis" population = "15">
+    </entity>
+    <entity type="Consumer" name="Red-tailed hawk" species = "Buteo jamaicensis" population = "2">
+    </entity>
+    <entity type="Decomposer" name="Dermestid beetle" species = "Dermestes carnivora" population = "2">
+    </entity>
+    <entity type="Decomposer" name="Guano Beetle" species = "Jacobsoniidae" population = "100">
+    </entity>
+    <entity type="Player" name="Anonymous Player" species = "Human" population = "1">
+    </entity>
+    <entity type="Vendor" name="Unknown" species = "Human" population = "1">
+        <item name = "Scarecrow" value = "15">
+        </item>
+        <item name = "Owl decoy" value = "4.5">
+        </item>
+        <item name = "Shovel" value = "6.25">
+        </item>
+    </entity>
+</environment>

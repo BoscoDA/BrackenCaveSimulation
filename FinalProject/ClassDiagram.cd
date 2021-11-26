@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="FinalProject.Environment" Collapsed="true">
+    <Position X="23.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAIAAAgCAAAAAAAAAAAgAAAAIAAQAAQAUAAEAEAAA=</HashCode>
+      <FileName>Environment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProject.Entity">
+    <Position X="10.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAgAAAAIAAAAAAQAAAAEAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Entities\Entity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProject.Item">
+    <Position X="3.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAEACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProject.Producer">
+    <Position X="2" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Entities\Producer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProject.Consumer">
+    <Position X="13.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAEAAAUAAgAEAAAAAAAAAEAAAABAAAAAAIAAA=</HashCode>
+      <FileName>Entities\Consumer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProject.Decomposer">
+    <Position X="19.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAQAAgAEAAAAAAAAAEAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Decomposer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProject.Player">
+    <Position X="8" Y="5.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProject.Vender">
+    <Position X="5.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Vender.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProject.Cotton">
+    <Position X="3.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Cotton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProject.Corn">
+    <Position X="1.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Corn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProject.Worm">
+    <Position X="10.75" Y="7.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Worm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProject.Bat">
+    <Position X="15.75" Y="7.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAEAAAAAAAAAAAFABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Bat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProject.Hawk">
+    <Position X="13.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAEAAAAAAAAAAABABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Hawk.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProject.HawkDeterrents">
+    <Position X="0.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\HawkDeterrents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProject.Seed">
+    <Position X="2.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\Seed.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProject.Beetle">
+    <Position X="19.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Beetle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProject.Guano">
+    <Position X="5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\Guano.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProject.SmallAnimal">
+    <Position X="7.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\SmallAnimal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProject.Weather" Collapsed="true">
+    <Position X="25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAFAAAAAAAAAAAAAAAAAQYAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Weather.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProject.Person">
+    <Position X="6.75" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProject.GuanoBeetle">
+    <Position X="20.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAABABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\GuanoBeetle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProject.DermestidBeetle">
+    <Position X="18.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\DermestidBeetle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProject.CornWorm">
+    <Position X="10" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\CornWorm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProject.CottonWorm">
+    <Position X="12" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\CottonWorm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

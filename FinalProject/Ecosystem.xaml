@@ -1,0 +1,90 @@
+﻿<Page x:Class="FinalProject.Ecosystem"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FinalProject"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1300
+"
+      Title="Ecosystem">
+
+    <Grid x:Name="MainGrid" Loaded="MainGrid_Loaded">
+        <Rectangle Fill="#FFF3F3F3" HorizontalAlignment="Left" Height="260" Margin="766,516,0,0" Stroke="Black" VerticalAlignment="Top" Width="524" RadiusY="25" RadiusX="25"/>
+        <Rectangle Fill="#FFF3F3F3" HorizontalAlignment="Left" Height="442" Margin="766,30,0,0" Stroke="Black" VerticalAlignment="Top" Width="524" RadiusY="25" RadiusX="25"/>
+        <Rectangle Fill="#FFF3F3F3" HorizontalAlignment="Left" Height="746" Margin="33,30,0,0" Stroke="Black" VerticalAlignment="Top" Width="702" RadiusX="25" RadiusY="23"/>
+        <Rectangle x:Name="BatImage" Fill="#FF72CD69" HorizontalAlignment="Left" Height="148" Margin="33,324,0,0" Stroke="White" VerticalAlignment="Top" Width="146" RenderTransformOrigin="0.62,0.207">
+            <Rectangle.OpacityMask>
+                <ImageBrush ImageSource="media/bat.png" Stretch="Uniform"/>
+            </Rectangle.OpacityMask>
+        </Rectangle>
+        <Rectangle x:Name="HawkImage" Fill="#FF72CD69" HorizontalAlignment="Left" Height="148" Margin="216,324,0,0" Stroke="White" VerticalAlignment="Top" Width="146">
+            <Rectangle.OpacityMask>
+                <ImageBrush ImageSource="media/hawk.png" Stretch="Uniform"/>
+            </Rectangle.OpacityMask>
+        </Rectangle>
+        <Rectangle x:Name="CornWormImage" Fill="#FF72CD69" HorizontalAlignment="Left" Height="148" Margin="403,324,0,0" Stroke="White" VerticalAlignment="Top" Width="146">
+            <Rectangle.OpacityMask>
+                <ImageBrush ImageSource="media/worm.png" Stretch="Uniform"/>
+            </Rectangle.OpacityMask>
+        </Rectangle>
+        <Rectangle x:Name="CornImage" Fill="#FF72CD69" HorizontalAlignment="Left" Height="146" Margin="33,73,0,0" Stroke="White" VerticalAlignment="Top" Width="146" RenderTransformOrigin="0.569,-0.328">
+            <Rectangle.OpacityMask>
+                <ImageBrush ImageSource="media/corn.png" Stretch="Uniform"/>
+            </Rectangle.OpacityMask>
+        </Rectangle>
+        <Rectangle x:Name="CottonImage" Fill="#FF72CD69" HorizontalAlignment="Left" Height="146" Margin="216,73,0,0" Stroke="White" VerticalAlignment="Top" Width="146" RenderTransformOrigin="0.569,-0.328">
+            <Rectangle.OpacityMask>
+                <ImageBrush ImageSource="media/cotton.png" Stretch="UniformToFill"/>
+            </Rectangle.OpacityMask>
+        </Rectangle>
+        <Rectangle x:Name="GuanoBeetleImage" Fill="#FF72CD69" HorizontalAlignment="Left" Height="145" Margin="33,578,0,0" Stroke="White" VerticalAlignment="Top" Width="146">
+            <Rectangle.OpacityMask>
+                <ImageBrush ImageSource="media/beetle.png" Stretch="Uniform"/>
+            </Rectangle.OpacityMask>
+        </Rectangle>
+        <Rectangle x:Name="DermestidBeetleImage" Fill="#FF72CD69" HorizontalAlignment="Left" Height="145" Margin="216,578,0,0" Stroke="White" VerticalAlignment="Top" Width="146">
+            <Rectangle.OpacityMask>
+                <ImageBrush ImageSource="media/beetle.png" Stretch="Uniform"/>
+            </Rectangle.OpacityMask>
+        </Rectangle>
+        <TextBlock x:Name="CornName" HorizontalAlignment="Left" Height="38" Margin="33,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" FontSize="16" TextAlignment="Center" Text="{Binding Name}" FontWeight="Bold" FontFamily="Courier New"/>
+        <TextBlock x:Name="CottonName" HorizontalAlignment="Left" Height="38" Margin="216,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" FontSize="16" TextAlignment="Center" Text="{Binding Name}" FontWeight="Bold" FontFamily="Courier New"/>
+        <TextBlock x:Name="BatName" HorizontalAlignment="Left" Height="38" Margin="33,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" FontSize="16" TextAlignment="Center" Text="{Binding Name}" FontWeight="Bold" FontFamily="Courier New"/>
+        <TextBlock x:Name="HawkName" HorizontalAlignment="Left" Height="38" Margin="216,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" FontSize="16" TextAlignment="Center" Text="{Binding Name}" FontWeight="Bold" FontFamily="Courier New"/>
+        <TextBlock x:Name="CornWormName" HorizontalAlignment="Left" Height="38" Margin="403,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" FontSize="16" TextAlignment="Center" Text="{Binding Name}" FontWeight="Bold" FontFamily="Courier New"/>
+        <TextBlock x:Name="GuanoBeetleName" HorizontalAlignment="Left" Height="40" Margin="33,538,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" FontSize="16" TextAlignment="Center" Text="{Binding Name}" FontWeight="Bold" FontFamily="Courier New"/>
+        <TextBlock x:Name="DermestidBeetleName" HorizontalAlignment="Left" Height="40" Margin="216,538,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" FontSize="16" TextAlignment="Center" Text="{Binding Name}" FontWeight="Bold" FontFamily="Courier New"/>
+        <Rectangle x:Name="CottonWormImage" Fill="#FF72CD69" HorizontalAlignment="Left" Height="148" Margin="588,324,0,0" Stroke="White" VerticalAlignment="Top" Width="147">
+            <Rectangle.OpacityMask>
+                <ImageBrush ImageSource="media/worm.png" Stretch="Uniform"/>
+            </Rectangle.OpacityMask>
+        </Rectangle>
+        <TextBlock x:Name="CottonWormName" HorizontalAlignment="Left" Height="38" Margin="588,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" FontSize="16" Text="{Binding Name}" FontWeight="Bold" FontFamily="Courier New"/>
+        <TextBlock x:Name="CornPopulation" HorizontalAlignment="Left" Height="39" Margin="33,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" TextAlignment="Center" FontSize="16" Text="{Binding Population}" FontFamily="Courier New"/>
+        <TextBlock x:Name="CottonPopulation" HorizontalAlignment="Left" Height="39" Margin="216,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" TextAlignment="Center" FontSize="16" Text="{Binding Population}" FontFamily="Courier New"/>
+        <TextBlock x:Name="BatPopulation" HorizontalAlignment="Left" Height="38" Margin="33,472,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" TextAlignment="Center" FontSize="16" Text="{Binding Population}" FontFamily="Courier New"/>
+        <TextBlock x:Name="HawkPopulation" HorizontalAlignment="Left" Height="38" Margin="216,472,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" TextAlignment="Center" FontSize="16" Text="{Binding Population}" FontFamily="Courier New"/>
+        <TextBlock x:Name="CornWormPopulation" HorizontalAlignment="Left" Height="38" Margin="403,472,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" TextAlignment="Center" FontSize="16" Text="{Binding Population}" FontFamily="Courier New"/>
+        <TextBlock x:Name="CottonWormPopulation" HorizontalAlignment="Left" Height="38" Margin="588,472,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" TextAlignment="Center" FontSize="16" Text="{Binding Population}" FontFamily="Courier New"/>
+        <TextBlock x:Name="GuanoBeetlePopulation" HorizontalAlignment="Left" Height="39" Margin="33,728,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" TextAlignment="Center" FontSize="16" Text="{Binding Population}" FontFamily="Courier New"/>
+        <TextBlock x:Name="DermestidBeetlePopulation" HorizontalAlignment="Left" Height="39" Margin="216,728,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" TextAlignment="Center" FontSize="16" Text="{Binding Population}" FontFamily="Courier New"/>
+        <TextBlock x:Name="CurrentDay" HorizontalAlignment="Left" Height="22" Margin="1024,326,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="224" FontSize="16" FontFamily="Courier New"/>
+        <TextBlock x:Name="EnvironmentName" HorizontalAlignment="Left" Height="24" Margin="1024,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" Text="{Binding Name}" FontSize="16" TextAlignment="Center" FontWeight="Bold" FontFamily="Courier New"/>
+        <Rectangle x:Name="CaveImage" Fill="Black" HorizontalAlignment="Left" Height="218" Margin="1024,102,0,0" Stroke="White" VerticalAlignment="Top" Width="243">
+            <Rectangle.OpacityMask>
+                <ImageBrush ImageSource="media/cave.png" Stretch="Uniform"/>
+            </Rectangle.OpacityMask>
+        </Rectangle>
+        <TextBlock x:Name="EnvironmentGuanoAmountOuput" HorizontalAlignment="Left" Margin="1024,372,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="224" FontSize="16" FontFamily="Courier New"/>
+        <TextBlock x:Name="EnvironmentTemperatureOuput" HorizontalAlignment="Left" Margin="1024,348,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="224" FontSize="16" FontFamily="Courier New"/>
+        <Button x:Name="State" Content="Start" HorizontalAlignment="Left" Height="39" Margin="783,703,0,0" VerticalAlignment="Top" Width="156" Click="State_Click" Background="White"/>
+        <Button x:Name="Shop" Content="Shop" HorizontalAlignment="Left" Height="39" Margin="1111,703,0,0" VerticalAlignment="Top" Width="156" Click="Shop_Click" Background="White"/>
+        <TextBlock x:Name="EnvironmentWaterSupplyOuput" HorizontalAlignment="Left" Margin="1024,396,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="224" FontSize="16" FontFamily="Courier New" Text="{Binding WaterSupply}"/>
+        <ScrollViewer Name="EventOutput" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Hidden" 
+                      HorizontalAlignment="Left" Height="145" Margin="783,538,0,0" VerticalAlignment="Top" Width="484" 
+                      FontFamily="Courier New" FontSize="16" Background="White" BorderBrush="Black" Foreground="Black">
+        </ScrollViewer>
+        <Button x:Name="Player" Content="Player" HorizontalAlignment="Left" Height="39" Margin="944,703,0,0" VerticalAlignment="Top" Width="162" Background="White"/>
+    </Grid>
+</Page>
