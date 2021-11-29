@@ -21,6 +21,7 @@ namespace FinalProject
     /// </summary>
     public partial class Ecosystem : Page
     {
+        #region Fields
         Environment environment = Environment.GetInstance();
         DispatcherTimer timer;
         TimeSpan timeSpan;
@@ -30,35 +31,9 @@ namespace FinalProject
             InitializeComponent();
 
         }
-        private void LoadInformation()
-        {
-            CornName.DataContext = environment.Entities[0];
-            CottonName.DataContext = environment.Entities[1];
-            BatName.DataContext = Bat.GetInstance();
-            HawkName.DataContext = environment.Entities[5];
-            CornWormName.DataContext = CornWorm.GetInstance();
-            CottonWormName.DataContext = environment.Entities[3];
-            GuanoBeetleName.DataContext = environment.Entities[7];
-            DermestidBeetleName.DataContext = environment.Entities[6];
-            CornPopulation.Text = Corn.GetInstance().Population.ToString();
-            CottonPopulation.Text = Cotton.GetInstance().Population.ToString();
-            BatPopulation.Text = Bat.GetInstance().Population.ToString();
-            HawkPopulation.Text = Hawk.GetInstance().Population.ToString();
-            CornWormPopulation.Text = CornWorm.GetInstance().Population.ToString();
-            CottonWormPopulation.Text = CottonWorm.GetInstance().Population.ToString();
-            GuanoBeetlePopulation.Text = GuanoBeetle.GetInstance().Population.ToString();
-            DermestidBeetlePopulation.Text = DermestidBeetle.GetInstance().Population.ToString();
-            EnvironmentName.Text = environment.Name;
-            EnvironmentGuanoAmountOuput.Text = $"Guano Amount: {environment.GuanoAmount}";
-            EnvironmentTemperatureOuput.Text = $"Temperature: {environment.Temperature} °F";
-            EnvironmentWaterSupplyOuput.Text = $"Water Supply: {environment.WaterSupply}%";
-            foreach (Entity e in environment.Entities)
-            {
-                //only update player about the entities that aren't the player and vendor
-                if (e.Species.ToLower() != "human")
-                    UpdatePlayerOnRatios(e);
-            }
-        }
+        #endregion
+
+        #region LoadInfo
         private void MainGrid_Loaded(object sender, RoutedEventArgs e)
         {
             LoadInformation();
@@ -70,6 +45,49 @@ namespace FinalProject
 
             CurrentDay.Text = $"Day: {environment.Days}/273";
         }
+        private void LoadInformation()
+        {
+            LoadEntityNames();
+            LoadEntityPopulation();
+            LoadEnvironmentInformation();
+            foreach (Entity e in environment.Entities)
+            {
+                //only update player about the entities that aren't the player and vendor
+                if (e.Species.ToLower() != "human")
+                    UpdatePlayerOnRatios(e);
+            }
+        }
+        private void LoadEntityNames()
+        {
+            CornName.DataContext = Corn.GetInstance();
+            CottonName.DataContext = Cotton.GetInstance();
+            BatName.DataContext = Bat.GetInstance();
+            HawkName.DataContext = Hawk.GetInstance();
+            CornWormName.DataContext = CornWorm.GetInstance();
+            CottonWormName.DataContext = CottonWorm.GetInstance();
+            GuanoBeetleName.DataContext = GuanoBeetle.GetInstance();
+            DermestidBeetleName.DataContext = DermestidBeetle.GetInstance();
+        }
+        private void LoadEntityPopulation()
+        {
+            CornPopulation.Text = Corn.GetInstance().Population.ToString();
+            CottonPopulation.Text = Cotton.GetInstance().Population.ToString();
+            BatPopulation.Text = Bat.GetInstance().Population.ToString();
+            HawkPopulation.Text = Hawk.GetInstance().Population.ToString();
+            CornWormPopulation.Text = CornWorm.GetInstance().Population.ToString();
+            CottonWormPopulation.Text = CottonWorm.GetInstance().Population.ToString();
+            GuanoBeetlePopulation.Text = GuanoBeetle.GetInstance().Population.ToString();
+            DermestidBeetlePopulation.Text = DermestidBeetle.GetInstance().Population.ToString();
+        }
+        private void LoadEnvironmentInformation()
+        {
+            EnvironmentName.Text = environment.Name;
+            EnvironmentGuanoAmountOuput.Text = $"Guano Amount: {environment.GuanoAmount}";
+            EnvironmentTemperatureOuput.Text = $"Temperature: {environment.Temperature} °F";
+            EnvironmentWaterSupplyOuput.Text = $"Water Supply: {environment.WaterSupply}%";
+        }
+        #endregion
+
         private void GameLoop()
         {
             environment.Days++;
@@ -121,6 +139,8 @@ namespace FinalProject
 
             timer.Start();
         }
+
+        #region Buttons
         private void State_Click(object sender, RoutedEventArgs e)
         {
             if (State.Content.ToString() == "Start")
@@ -142,12 +162,24 @@ namespace FinalProject
                 Counter();
             }
         }
-
         private void Shop_Click(object sender, RoutedEventArgs e)
         {
-
+            if (Shop.Content.ToString() == "Shop")
+            {
+                ShopWindow.Visibility = Visibility.Visible;
+                Shop.Content = "Ecosystem";
+                State.Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                ShopWindow.Visibility = Visibility.Hidden;
+                Shop.Content = "Shop";
+                State.Visibility = Visibility.Visible;
+            }
         }
+        #endregion
 
+        #region Events
         private void UpdatePlayerOnRatios(Entity entity)
         {
             entity.AmountChanged += entity.Entity_AmountChanged;
@@ -158,5 +190,6 @@ namespace FinalProject
                 EventOutput.Content = $"Day {environment.Days}: {entity.Status}\n" + current;
             }
         }
+        #endregion
     }
 }

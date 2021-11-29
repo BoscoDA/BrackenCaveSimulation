@@ -86,5 +86,8 @@
                       FontFamily="Courier New" FontSize="16" Background="White" BorderBrush="Black" Foreground="Black">
         </ScrollViewer>
         <Button x:Name="Player" Content="Player" HorizontalAlignment="Left" Height="39" Margin="944,703,0,0" VerticalAlignment="Top" Width="162" Background="White"/>
+        <Grid x:Name="ShopWindow" Margin="33,30,565,24" Visibility="Hidden">
+            <Rectangle Fill="#FFF3F3F3" HorizontalAlignment="Left" Height="746" Stroke="Black" VerticalAlignment="Top" Width="702" RadiusX="25" RadiusY="23"/>
+        </Grid>
     </Grid>
 </Page>
