@@ -7,7 +7,6 @@ namespace FinalProject
 {
     public class Consumer : Entity
     {
-
         public virtual void Eat()
         {
             throw new System.NotImplementedException();
@@ -22,5 +21,7 @@ namespace FinalProject
         {
             throw new System.NotImplementedException();
         }
+
+        
     }
 }

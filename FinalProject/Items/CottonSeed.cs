@@ -2,30 +2,31 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace FinalProject
 {
-    public class HawkDeterrents : Item
+    class CottonSeed : Item
     {
+        static CottonSeed instance;
 
-        static HawkDeterrents instance;
-
-        private HawkDeterrents()
+        private CottonSeed()
         {
 
         }
 
-        public static HawkDeterrents GetInstance()
+        public static CottonSeed GetInstance()
         {
             if (instance == null)
             {
-                instance = new HawkDeterrents();
+                instance = new CottonSeed();
             }
             return instance;
         }
+
         public override void Effect(int quant)
         {
-            Player.GetInstance().HasOwl = true;
+            Cotton.GetInstance().Population += quant;
         }
     }
 }

@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Items\CottonBall.cs" />
     <Compile Include="Ecosystem.xaml.cs">
       <DependentUpon>Ecosystem.xaml</DependentUpon>
     </Compile>
@@ -66,14 +67,17 @@
     <Compile Include="Entities\Corn.cs" />
     <Compile Include="Entities\Cotton.cs" />
     <Compile Include="DataLoader.cs" />
+    <Compile Include="Entities\Guano.cs" />
     <Compile Include="Entities\GuanoBeetle.cs" />
-    <Compile Include="Items\Guano.cs" />
+    <Compile Include="Items\CornCob.cs" />
+    <Compile Include="Items\CornSeed.cs" />
+    <Compile Include="Items\CottonSeed.cs" />
+    <Compile Include="Items\FecalMatter.cs" />
     <Compile Include="Entities\Hawk.cs" />
     <Compile Include="Items\HawkDeterrents.cs" />
     <Compile Include="Entities\Person.cs" />
-    <Compile Include="Items\Seed.cs" />
-    <Compile Include="Items\SmallAnimal.cs" />
     <Compile Include="Entities\Vender.cs" />
+    <Compile Include="Items\Shovel.cs" />
     <Compile Include="MainMenu.xaml.cs">
       <DependentUpon>MainMenu.xaml</DependentUpon>
     </Compile>

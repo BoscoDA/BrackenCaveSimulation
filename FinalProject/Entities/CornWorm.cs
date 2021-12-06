@@ -10,6 +10,7 @@ namespace FinalProject
         static CornWorm instance;
         private CornWorm()
         {
+            
         }
         public static CornWorm GetInstance()
         {
@@ -22,7 +23,26 @@ namespace FinalProject
 
         public override void Eat()
         {
-            Corn.GetInstance().Population -= 50*(Population/27000);
+            if(Corn.GetInstance().Population > 0)
+            {
+                Corn.GetInstance().Population -= 1;
+            }
+            else
+            {
+                Population -= 1000;
+            }
+            
+        }
+        public override bool CheckRatio()
+        {
+            if (Corn.GetInstance().Population > 1 & Population > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

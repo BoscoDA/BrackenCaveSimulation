@@ -10,8 +10,8 @@ namespace FinalProject
         private string name;
         private string species;
         private int population;
-
         public string Status = "";
+
         public string Name { get => name; set => name = value; }
         public string Species { get => species; set => species = value; }
         public int Population { 
@@ -22,29 +22,28 @@ namespace FinalProject
                 if (value < 0) { population = 0; return; }
                 decimal oldAmount = population;
                 population = value;
-                OnAmountChanged(new AmountChangedEventArgs(oldAmount, population));
+                AmountChanged?.Invoke(this, new AmountChangedEventArgs(oldAmount, population));
             }
         }
 
-        public event EventHandler<AmountChangedEventArgs> AmountChanged;
 
-        protected virtual void OnAmountChanged(AmountChangedEventArgs e)
+
+        public virtual bool CheckRatio()
         {
-            AmountChanged?.Invoke(this, e);
+            return false;
         }
 
+        public event EventHandler<AmountChangedEventArgs> AmountChanged;
         public void Entity_AmountChanged(object sender, AmountChangedEventArgs e)
         {
             if (e.LastAmount > e.NewAmount)
             {
-
                 if (Species == "Tadarida brasiliensis")
                 {
                     Status = "ALERT: Bat population is decreasing!";
                 }
             }
         }
-
         public class AmountChangedEventArgs : EventArgs
         {
             public readonly decimal LastAmount;
@@ -52,7 +51,8 @@ namespace FinalProject
 
             public AmountChangedEventArgs(decimal lastAmount, decimal newAmount)
             {
-                LastAmount = lastAmount; NewAmount = newAmount;
+                LastAmount = lastAmount; 
+                NewAmount = newAmount;
             }
         }
     }

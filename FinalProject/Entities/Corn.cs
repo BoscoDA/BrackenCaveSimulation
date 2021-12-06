@@ -8,8 +8,10 @@ namespace FinalProject
     public class Corn : Producer
     {
         static Corn instance;
+        
         private Corn()
         {
+            
         }
 
         public static Corn GetInstance()
@@ -19,6 +21,17 @@ namespace FinalProject
                 instance = new Corn();
             }
             return instance;
+        }
+        public override bool CheckRatio()
+        {
+            if (Environment.GetInstance().WaterSupply > 10)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

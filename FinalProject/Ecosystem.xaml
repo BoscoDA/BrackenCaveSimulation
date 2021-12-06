@@ -9,85 +9,162 @@
 "
       Title="Ecosystem">
 
-    <Grid x:Name="MainGrid" Loaded="MainGrid_Loaded">
+    <Grid x:Name="MainGrid" Loaded="MainGrid_Loaded" Margin="-8,0,8,0">
         <Rectangle Fill="#FFF3F3F3" HorizontalAlignment="Left" Height="260" Margin="766,516,0,0" Stroke="Black" VerticalAlignment="Top" Width="524" RadiusY="25" RadiusX="25"/>
         <Rectangle Fill="#FFF3F3F3" HorizontalAlignment="Left" Height="442" Margin="766,30,0,0" Stroke="Black" VerticalAlignment="Top" Width="524" RadiusY="25" RadiusX="25"/>
         <Rectangle Fill="#FFF3F3F3" HorizontalAlignment="Left" Height="746" Margin="33,30,0,0" Stroke="Black" VerticalAlignment="Top" Width="702" RadiusX="25" RadiusY="23"/>
-        <Rectangle x:Name="BatImage" Fill="#FF72CD69" HorizontalAlignment="Left" Height="148" Margin="33,324,0,0" Stroke="White" VerticalAlignment="Top" Width="146" RenderTransformOrigin="0.62,0.207">
+        <Rectangle x:Name="BatImage" Fill="#FF72CD69" HorizontalAlignment="Left" Height="148" Margin="61,326,0,0" Stroke="White" VerticalAlignment="Top" Width="146" RenderTransformOrigin="0.62,0.207">
             <Rectangle.OpacityMask>
                 <ImageBrush ImageSource="media/bat.png" Stretch="Uniform"/>
             </Rectangle.OpacityMask>
         </Rectangle>
-        <Rectangle x:Name="HawkImage" Fill="#FF72CD69" HorizontalAlignment="Left" Height="148" Margin="216,324,0,0" Stroke="White" VerticalAlignment="Top" Width="146">
+        <Rectangle x:Name="HawkImage" Fill="#FF72CD69" HorizontalAlignment="Left" Height="148" Margin="230,324,0,0" Stroke="White" VerticalAlignment="Top" Width="146">
             <Rectangle.OpacityMask>
                 <ImageBrush ImageSource="media/hawk.png" Stretch="Uniform"/>
             </Rectangle.OpacityMask>
         </Rectangle>
-        <Rectangle x:Name="CornWormImage" Fill="#FF72CD69" HorizontalAlignment="Left" Height="148" Margin="403,324,0,0" Stroke="White" VerticalAlignment="Top" Width="146">
+        <Rectangle x:Name="CornWormImage" Fill="#FF72CD69" HorizontalAlignment="Left" Height="148" Margin="397,324,0,0" Stroke="White" VerticalAlignment="Top" Width="146">
             <Rectangle.OpacityMask>
                 <ImageBrush ImageSource="media/worm.png" Stretch="Uniform"/>
             </Rectangle.OpacityMask>
         </Rectangle>
-        <Rectangle x:Name="CornImage" Fill="#FF72CD69" HorizontalAlignment="Left" Height="146" Margin="33,73,0,0" Stroke="White" VerticalAlignment="Top" Width="146" RenderTransformOrigin="0.569,-0.328">
+        <Rectangle x:Name="CornImage" Fill="#FF72CD69" HorizontalAlignment="Left" Height="146" Margin="61,75,0,0" Stroke="White" VerticalAlignment="Top" Width="146" RenderTransformOrigin="0.569,-0.328">
             <Rectangle.OpacityMask>
                 <ImageBrush ImageSource="media/corn.png" Stretch="Uniform"/>
             </Rectangle.OpacityMask>
         </Rectangle>
-        <Rectangle x:Name="CottonImage" Fill="#FF72CD69" HorizontalAlignment="Left" Height="146" Margin="216,73,0,0" Stroke="White" VerticalAlignment="Top" Width="146" RenderTransformOrigin="0.569,-0.328">
+        <Rectangle x:Name="CottonImage" Fill="#FF72CD69" HorizontalAlignment="Left" Height="146" Margin="230,80,0,0" Stroke="White" VerticalAlignment="Top" Width="146" RenderTransformOrigin="0.569,-0.328">
             <Rectangle.OpacityMask>
                 <ImageBrush ImageSource="media/cotton.png" Stretch="UniformToFill"/>
             </Rectangle.OpacityMask>
         </Rectangle>
-        <Rectangle x:Name="GuanoBeetleImage" Fill="#FF72CD69" HorizontalAlignment="Left" Height="145" Margin="33,578,0,0" Stroke="White" VerticalAlignment="Top" Width="146">
+        <Rectangle x:Name="GuanoBeetleImage" Fill="#FF72CD69" HorizontalAlignment="Left" Height="145" Margin="61,578,0,0" Stroke="White" VerticalAlignment="Top" Width="146">
             <Rectangle.OpacityMask>
                 <ImageBrush ImageSource="media/beetle.png" Stretch="Uniform"/>
             </Rectangle.OpacityMask>
         </Rectangle>
-        <Rectangle x:Name="DermestidBeetleImage" Fill="#FF72CD69" HorizontalAlignment="Left" Height="145" Margin="216,578,0,0" Stroke="White" VerticalAlignment="Top" Width="146">
+        <Rectangle x:Name="DermestidBeetleImage" Fill="#FF72CD69" HorizontalAlignment="Left" Height="145" Margin="230,578,0,0" Stroke="White" VerticalAlignment="Top" Width="146">
             <Rectangle.OpacityMask>
                 <ImageBrush ImageSource="media/beetle.png" Stretch="Uniform"/>
             </Rectangle.OpacityMask>
         </Rectangle>
-        <TextBlock x:Name="CornName" HorizontalAlignment="Left" Height="38" Margin="33,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" FontSize="16" TextAlignment="Center" Text="{Binding Name}" FontWeight="Bold" FontFamily="Courier New"/>
-        <TextBlock x:Name="CottonName" HorizontalAlignment="Left" Height="38" Margin="216,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" FontSize="16" TextAlignment="Center" Text="{Binding Name}" FontWeight="Bold" FontFamily="Courier New"/>
-        <TextBlock x:Name="BatName" HorizontalAlignment="Left" Height="38" Margin="33,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" FontSize="16" TextAlignment="Center" Text="{Binding Name}" FontWeight="Bold" FontFamily="Courier New"/>
-        <TextBlock x:Name="HawkName" HorizontalAlignment="Left" Height="38" Margin="216,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" FontSize="16" TextAlignment="Center" Text="{Binding Name}" FontWeight="Bold" FontFamily="Courier New"/>
-        <TextBlock x:Name="CornWormName" HorizontalAlignment="Left" Height="38" Margin="403,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" FontSize="16" TextAlignment="Center" Text="{Binding Name}" FontWeight="Bold" FontFamily="Courier New"/>
-        <TextBlock x:Name="GuanoBeetleName" HorizontalAlignment="Left" Height="40" Margin="33,538,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" FontSize="16" TextAlignment="Center" Text="{Binding Name}" FontWeight="Bold" FontFamily="Courier New"/>
-        <TextBlock x:Name="DermestidBeetleName" HorizontalAlignment="Left" Height="40" Margin="216,538,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" FontSize="16" TextAlignment="Center" Text="{Binding Name}" FontWeight="Bold" FontFamily="Courier New"/>
-        <Rectangle x:Name="CottonWormImage" Fill="#FF72CD69" HorizontalAlignment="Left" Height="148" Margin="588,324,0,0" Stroke="White" VerticalAlignment="Top" Width="147">
+        <TextBlock x:Name="CornName" HorizontalAlignment="Left" Height="38" Margin="61,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" FontSize="16" TextAlignment="Center" Text="{Binding Name}" FontWeight="Bold" FontFamily="Courier New"/>
+        <TextBlock x:Name="CottonName" HorizontalAlignment="Left" Height="38" Margin="230,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" FontSize="16" TextAlignment="Center" Text="{Binding Name}" FontWeight="Bold" FontFamily="Courier New"/>
+        <TextBlock x:Name="BatName" HorizontalAlignment="Left" Height="38" Margin="61,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" FontSize="16" TextAlignment="Center" Text="{Binding Name}" FontWeight="Bold" FontFamily="Courier New"/>
+        <TextBlock x:Name="HawkName" HorizontalAlignment="Left" Height="38" Margin="230,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" FontSize="16" TextAlignment="Center" Text="{Binding Name}" FontWeight="Bold" FontFamily="Courier New"/>
+        <TextBlock x:Name="CornWormName" HorizontalAlignment="Left" Height="38" Margin="397,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" FontSize="16" TextAlignment="Center" Text="{Binding Name}" FontWeight="Bold" FontFamily="Courier New"/>
+        <TextBlock x:Name="GuanoBeetleName" HorizontalAlignment="Left" Height="40" Margin="61,538,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" FontSize="16" TextAlignment="Center" Text="{Binding Name}" FontWeight="Bold" FontFamily="Courier New"/>
+        <TextBlock x:Name="DermestidBeetleName" HorizontalAlignment="Left" Height="40" Margin="230,538,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" FontSize="16" TextAlignment="Center" Text="{Binding Name}" FontWeight="Bold" FontFamily="Courier New"/>
+        <Rectangle x:Name="CottonWormImage" Fill="#FF72CD69" HorizontalAlignment="Left" Height="148" Margin="562,326,0,0" Stroke="White" VerticalAlignment="Top" Width="147">
             <Rectangle.OpacityMask>
                 <ImageBrush ImageSource="media/worm.png" Stretch="Uniform"/>
             </Rectangle.OpacityMask>
         </Rectangle>
-        <TextBlock x:Name="CottonWormName" HorizontalAlignment="Left" Height="38" Margin="588,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" FontSize="16" Text="{Binding Name}" FontWeight="Bold" FontFamily="Courier New"/>
-        <TextBlock x:Name="CornPopulation" HorizontalAlignment="Left" Height="39" Margin="33,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" TextAlignment="Center" FontSize="16" Text="{Binding Population}" FontFamily="Courier New"/>
-        <TextBlock x:Name="CottonPopulation" HorizontalAlignment="Left" Height="39" Margin="216,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" TextAlignment="Center" FontSize="16" Text="{Binding Population}" FontFamily="Courier New"/>
-        <TextBlock x:Name="BatPopulation" HorizontalAlignment="Left" Height="38" Margin="33,472,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" TextAlignment="Center" FontSize="16" Text="{Binding Population}" FontFamily="Courier New"/>
-        <TextBlock x:Name="HawkPopulation" HorizontalAlignment="Left" Height="38" Margin="216,472,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" TextAlignment="Center" FontSize="16" Text="{Binding Population}" FontFamily="Courier New"/>
-        <TextBlock x:Name="CornWormPopulation" HorizontalAlignment="Left" Height="38" Margin="403,472,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" TextAlignment="Center" FontSize="16" Text="{Binding Population}" FontFamily="Courier New"/>
-        <TextBlock x:Name="CottonWormPopulation" HorizontalAlignment="Left" Height="38" Margin="588,472,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" TextAlignment="Center" FontSize="16" Text="{Binding Population}" FontFamily="Courier New"/>
-        <TextBlock x:Name="GuanoBeetlePopulation" HorizontalAlignment="Left" Height="39" Margin="33,728,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" TextAlignment="Center" FontSize="16" Text="{Binding Population}" FontFamily="Courier New"/>
-        <TextBlock x:Name="DermestidBeetlePopulation" HorizontalAlignment="Left" Height="39" Margin="216,728,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" TextAlignment="Center" FontSize="16" Text="{Binding Population}" FontFamily="Courier New"/>
-        <TextBlock x:Name="CurrentDay" HorizontalAlignment="Left" Height="22" Margin="1024,326,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="224" FontSize="16" FontFamily="Courier New"/>
+        <TextBlock x:Name="CottonWormName" HorizontalAlignment="Left" Height="38" Margin="562,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" FontSize="16" Text="{Binding Name}" FontWeight="Bold" FontFamily="Courier New"/>
+        <TextBlock x:Name="CornPopulation" HorizontalAlignment="Left" Height="39" Margin="61,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" TextAlignment="Center" FontSize="16" Text= "{Binding Population}" FontFamily="Courier New"/>
+        <TextBlock x:Name="CottonPopulation" HorizontalAlignment="Left" Height="39" Margin="230,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" TextAlignment="Center" FontSize="16" Text="{Binding Population}" FontFamily="Courier New"/>
+        <TextBlock x:Name="BatPopulation" HorizontalAlignment="Left" Height="38" Margin="61,472,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" TextAlignment="Center" FontSize="16" Text="{Binding Population}" FontFamily="Courier New"/>
+        <TextBlock x:Name="HawkPopulation" HorizontalAlignment="Left" Height="38" Margin="230,472,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" TextAlignment="Center" FontSize="16" Text="{Binding Population}" FontFamily="Courier New"/>
+        <TextBlock x:Name="CornWormPopulation" HorizontalAlignment="Left" Height="38" Margin="397,472,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" TextAlignment="Center" FontSize="16" Text="{Binding Population}" FontFamily="Courier New"/>
+        <TextBlock x:Name="CottonWormPopulation" HorizontalAlignment="Left" Height="38" Margin="562,474,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" TextAlignment="Center" FontSize="16" Text="{Binding Population}" FontFamily="Courier New"/>
+        <TextBlock x:Name="GuanoBeetlePopulation" HorizontalAlignment="Left" Height="39" Margin="61,728,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" TextAlignment="Center" FontSize="16" Text="{Binding Population}" FontFamily="Courier New"/>
+        <TextBlock x:Name="DermestidBeetlePopulation" HorizontalAlignment="Left" Height="39" Margin="230,728,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" TextAlignment="Center" FontSize="16" Text="{Binding Population}" FontFamily="Courier New"/>
+        <TextBlock x:Name="CurrentDay" HorizontalAlignment="Left" Height="22" Margin="1024,326,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" FontSize="16" FontFamily="Courier New"/>
         <TextBlock x:Name="EnvironmentName" HorizontalAlignment="Left" Height="24" Margin="1024,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" Text="{Binding Name}" FontSize="16" TextAlignment="Center" FontWeight="Bold" FontFamily="Courier New"/>
         <Rectangle x:Name="CaveImage" Fill="Black" HorizontalAlignment="Left" Height="218" Margin="1024,102,0,0" Stroke="White" VerticalAlignment="Top" Width="243">
             <Rectangle.OpacityMask>
                 <ImageBrush ImageSource="media/cave.png" Stretch="Uniform"/>
             </Rectangle.OpacityMask>
         </Rectangle>
-        <TextBlock x:Name="EnvironmentGuanoAmountOuput" HorizontalAlignment="Left" Margin="1024,372,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="224" FontSize="16" FontFamily="Courier New"/>
-        <TextBlock x:Name="EnvironmentTemperatureOuput" HorizontalAlignment="Left" Margin="1024,348,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="224" FontSize="16" FontFamily="Courier New"/>
-        <Button x:Name="State" Content="Start" HorizontalAlignment="Left" Height="39" Margin="783,703,0,0" VerticalAlignment="Top" Width="156" Click="State_Click" Background="White"/>
-        <Button x:Name="Shop" Content="Shop" HorizontalAlignment="Left" Height="39" Margin="1111,703,0,0" VerticalAlignment="Top" Width="156" Click="Shop_Click" Background="White"/>
-        <TextBlock x:Name="EnvironmentWaterSupplyOuput" HorizontalAlignment="Left" Margin="1024,396,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="224" FontSize="16" FontFamily="Courier New" Text="{Binding WaterSupply}"/>
+        <TextBlock x:Name="EnvironmentGuanoAmountOuput" HorizontalAlignment="Left" Margin="1024,396,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="243" FontSize="16" FontFamily="Courier New"/>
+        <TextBlock x:Name="EnvironmentTemperatureOuput" HorizontalAlignment="Left" Margin="1024,348,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="243" FontSize="16" FontFamily="Courier New"/>
+        <Button x:Name="State" Content="Start" HorizontalAlignment="Left" Height="39" Margin="783,703,0,0" VerticalAlignment="Top" Width="156" Click="State_Click" Background="White" FontFamily="Courier New" FontSize="18" FontWeight="Bold"/>
+        <Button x:Name="Shop" Content="Shop" HorizontalAlignment="Left" Height="39" Margin="1111,703,0,0" VerticalAlignment="Top" Width="156" Click="Shop_Click" Background="White" FontSize="18" FontFamily="Courier New" FontWeight="Bold"/>
+        <TextBlock x:Name="EnvironmentWaterSupplyOuput" HorizontalAlignment="Left" Margin="1024,425,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="243" FontSize="16" FontFamily="Courier New"/>
         <ScrollViewer Name="EventOutput" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Hidden" 
                       HorizontalAlignment="Left" Height="145" Margin="783,538,0,0" VerticalAlignment="Top" Width="484" 
                       FontFamily="Courier New" FontSize="16" Background="White" BorderBrush="Black" Foreground="Black">
         </ScrollViewer>
-        <Button x:Name="Player" Content="Player" HorizontalAlignment="Left" Height="39" Margin="944,703,0,0" VerticalAlignment="Top" Width="162" Background="White"/>
-        <Grid x:Name="ShopWindow" Margin="33,30,565,24" Visibility="Hidden">
+        <Button x:Name="HarvestMenu" Content="Harvest" HorizontalAlignment="Left" Height="39" Margin="944,703,0,0" VerticalAlignment="Top" Width="162" Background="White" FontFamily="Courier New" FontWeight="Bold" FontSize="18" Click="HarvestMenu_Click"/>
+        <Grid x:Name="ShopWindow" Margin="33,30,565,24" Visibility="Hidden"
+              >
             <Rectangle Fill="#FFF3F3F3" HorizontalAlignment="Left" Height="746" Stroke="Black" VerticalAlignment="Top" Width="702" RadiusX="25" RadiusY="23"/>
+            <Canvas x:Name="ShopBuyGrid" HorizontalAlignment="Left" Height="302" Margin="31,56,0,0" VerticalAlignment="Top" Width="623">
+                <Rectangle Fill="#FFF3F3F3" HorizontalAlignment="Left" Height="302" Stroke="Black" VerticalAlignment="Top" Width="623" RadiusX="25" RadiusY="23"/>
+                <TextBlock x:Name="ItemName" HorizontalAlignment="Left" Height="54" TextWrapping="Wrap" Text="{Binding Name}" VerticalAlignment="Top" Width="204" FontWeight="Bold" FontSize="24" Canvas.Left="46"/>
+                <Image x:Name="ItemImage" HorizontalAlignment="Left" Height="182" VerticalAlignment="Top" Width="182" Source="{Binding Image}" Canvas.Left="405" Canvas.Top="35"/>
+                <TextBlock x:Name="ItemDescription" HorizontalAlignment="Left" Height="158" TextWrapping="Wrap" Text="{Binding Description}" VerticalAlignment="Top" Width="333" FontFamily="Courier New" FontSize="14" Canvas.Left="46" Canvas.Top="59"/>
+                <TextBlock x:Name="ItemPrice" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="{Binding PriceDetail}" VerticalAlignment="Top" Width="182" FontFamily="Courier New" FontSize="20" Canvas.Left="405" Canvas.Top="217"/>
+                <Button x:Name="NextItem" Content="&gt;" HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="22" FontFamily="Courier New" FontWeight="Bold" FontSize="18" Click="NextItem_Click" RenderTransformOrigin="-0.655,-0.643" Canvas.Left="587" Canvas.Top="115"/>
+                <Button x:Name="PreviousItem" Content="&lt;" HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="22" FontFamily="Courier New" FontWeight="Bold" FontSize="18" Click="PreviousItem_Click" Canvas.Top="115" Canvas.Left="10"/>
+                <Button x:Name="Buy" Content="Buy" HorizontalAlignment="Left" Height="28" VerticalAlignment="Top" Width="115" FontFamily="Courier New" FontWeight="Bold" FontSize="18" Canvas.Left="472" Canvas.Top="264" Click="Buy_Click"/>
+                <TextBlock HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="Quantity" VerticalAlignment="Top" Width="90" FontFamily="Courier New" FontWeight="Bold" FontSize="18" Canvas.Left="47" Canvas.Top="268"/>
+                <Button x:Name="DecreaseQuant" Content="-" HorizontalAlignment="Left" Height="28" VerticalAlignment="Top" Width="28" Canvas.Left="142" Canvas.Top="264" Click="DecreaseQuant_Click"/>
+                <Button x:Name="IncreaseQuant" Content="+" HorizontalAlignment="Left" Height="28" VerticalAlignment="Top" Width="28" Canvas.Left="260" Canvas.Top="264" Click="IncreaseQuant_Click"/>
+                <TextBlock x:Name="BuyQuantity" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" TextAlignment="Center" FontFamily="Courier New" FontSize="20" FontWeight="Bold" Text="0" Canvas.Left="175" Canvas.Top="266"/>
+                <TextBlock x:Name="TotalPrice" HorizontalAlignment="Left" Height="18" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" FontFamily="Courier New" FontSize="18" Canvas.Left="293" Canvas.Top="269"/>
+            </Canvas>
+
+            <Canvas x:Name="ShopSellGrid" HorizontalAlignment="Left" Height="302" Margin="34,434,0,0" VerticalAlignment="Top" Width="620">
+                <Rectangle Fill="#FFF3F3F3" HorizontalAlignment="Left" Height="302" Stroke="Black" VerticalAlignment="Top" Width="623" RadiusX="25" RadiusY="23"/>
+                <TextBlock x:Name="ItemNameSell" HorizontalAlignment="Left" Height="54" TextWrapping="Wrap" Text="{Binding Name}" VerticalAlignment="Top" Width="204" FontWeight="Bold" FontSize="24" Canvas.Left="37"/>
+                <Image x:Name="ItemImageSell" HorizontalAlignment="Left" Height="182" VerticalAlignment="Top" Width="182" Source="{Binding Image}" Canvas.Left="402" Canvas.Top="35"/>
+                <TextBlock x:Name="ItemDescriptionSell" HorizontalAlignment="Left" Height="158" TextWrapping="Wrap" Text="{Binding Description}" VerticalAlignment="Top" Width="333" FontFamily="Courier New" FontSize="14" Canvas.Left="37" Canvas.Top="59"/>
+                <TextBlock x:Name="ItemPriceSell" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="{Binding PriceDetail}" VerticalAlignment="Top" Width="182" FontFamily="Courier New" FontSize="20" Canvas.Left="402" Canvas.Top="217"/>
+                <Button x:Name="NextItemSell" Content="&gt;" HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="22" FontFamily="Courier New" FontWeight="Bold" FontSize="18" Canvas.Left="589" Canvas.Top="139" Click="NextItemSell_Click"/>
+                <Button x:Name="PreviousItemSell" Content="&lt;" HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="22" FontFamily="Courier New" FontWeight="Bold" FontSize="18" Canvas.Left="10" Canvas.Top="139" Click="PreviousItemSell_Click"/>
+                <Button x:Name="Sell" Content="Sell" HorizontalAlignment="Left" Height="28" VerticalAlignment="Top" Width="115" FontFamily="Courier New" FontWeight="Bold" FontSize="18" Canvas.Left="469" Canvas.Top="263" Click="Sell_Click"/>
+                <TextBlock HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" Text="Quantity" VerticalAlignment="Top" Width="90" FontFamily="Courier New" FontWeight="Bold" FontSize="18" Canvas.Left="24" Canvas.Top="266"/>
+                <Button x:Name="DecreaseQuantSell" Content="-" HorizontalAlignment="Left" Height="28" VerticalAlignment="Top" Width="28" Canvas.Left="119" Canvas.Top="263" Click="DecreaseQuantSell_Click"/>
+                <Button x:Name="IncreaseQuantSell" Content="+" HorizontalAlignment="Left" Height="28" VerticalAlignment="Top" Width="28" Canvas.Left="237" Canvas.Top="263" Click="IncreaseQuantSell_Click"/>
+                <TextBlock x:Name="SellQuant" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" TextAlignment="Center" FontFamily="Courier New" FontSize="20" FontWeight="Bold" Text="0" Canvas.Left="152" Canvas.Top="266"/>
+                <TextBlock x:Name="TotalPriceSell" HorizontalAlignment="Left" Height="18" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" FontFamily="Courier New" FontSize="18" Canvas.Left="281" Canvas.Top="268"/>
+            </Canvas>
+            <TextBlock HorizontalAlignment="Left" Height="41" TextWrapping="Wrap" Text="Sell" VerticalAlignment="Top" Width="95" FontFamily="Courier New" FontWeight="Bold" FontSize="36" Canvas.Left="7" Canvas.Top="-52" Margin="34,388,0,0"/>
+            <TextBlock HorizontalAlignment="Left" Height="41" TextWrapping="Wrap" Text="Buy" VerticalAlignment="Top" Width="77" FontFamily="Courier New" FontWeight="Bold" FontSize="36" Canvas.Left="7" Canvas.Top="-424" Margin="34,15,0,0"/>
+            <TextBlock x:Name="PlayerMoneyOutput" HorizontalAlignment="Left" Height="32" Margin="408,403,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="284" FontFamily="Courier New" FontSize="18" FontWeight="Bold"/>
+            <TextBlock x:Name="VenderMoneyOutput" HorizontalAlignment="Left" Height="32" Margin="408,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246" FontFamily="Courier New" FontSize="18" FontWeight="Bold"/>
         </Grid>
+        <TextBlock x:Name="Weather" HorizontalAlignment="Left" Margin="1024,372,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="243" FontSize="16" FontFamily="Courier New"/>
+        <Grid x:Name="HarvestGrid" HorizontalAlignment="Left" Height="746" Margin="33,30,0,0" VerticalAlignment="Top" Width="702" Visibility="Hidden">
+
+            <Rectangle Fill="#FFF3F3F3" HorizontalAlignment="Left" Height="746" Stroke="Black" VerticalAlignment="Top" Width="702" RadiusX="25" RadiusY="23" RenderTransformOrigin="0.475,0.504"/>
+            <Rectangle x:Name="CornHarvestImage" Fill="#FF72CD69" HorizontalAlignment="Left" Height="146" Margin="33,73,0,0" Stroke="White" VerticalAlignment="Top" Width="146" RenderTransformOrigin="0.569,-0.328">
+                <Rectangle.OpacityMask>
+                    <ImageBrush ImageSource="media/corn.png" Stretch="Uniform"/>
+                </Rectangle.OpacityMask>
+            </Rectangle>
+            <TextBlock x:Name="CornHarvestName" HorizontalAlignment="Left" Height="38" Margin="33,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" FontSize="16" TextAlignment="Center" Text="{Binding Name}" FontWeight="Bold" FontFamily="Courier New"/>
+            <TextBlock x:Name="CornHarvestPopulation" HorizontalAlignment="Left" Height="39" Margin="33,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" TextAlignment="Center" FontSize="16" Text="{Binding Population}" FontFamily="Courier New"/>
+            <Rectangle x:Name="CottonHarvestImage" Fill="#FF72CD69" HorizontalAlignment="Left" Height="146" Margin="33,301,0,0" Stroke="White" VerticalAlignment="Top" Width="146" RenderTransformOrigin="0.569,-0.328">
+                <Rectangle.OpacityMask>
+                    <ImageBrush ImageSource="media/cotton.png" Stretch="UniformToFill"/>
+                </Rectangle.OpacityMask>
+            </Rectangle>
+            <TextBlock x:Name="CottonHarvestName" HorizontalAlignment="Left" Height="38" Margin="33,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" FontSize="16" TextAlignment="Center" Text="{Binding Name}" FontWeight="Bold" FontFamily="Courier New"/>
+            <TextBlock x:Name="CottonHarvestPopulation" HorizontalAlignment="Left" Height="39" Margin="33,447,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" TextAlignment="Center" FontSize="16" Text="{Binding Population}" FontFamily="Courier New"/>
+            <Rectangle x:Name="GuanoHarvestImage" Fill="#FF72CD69" HorizontalAlignment="Left" Height="146" Margin="33,523,0,0" Stroke="White" VerticalAlignment="Top" Width="146" RenderTransformOrigin="0.569,-0.328">
+                <Rectangle.OpacityMask>
+                    <ImageBrush ImageSource="media/corn.png" Stretch="Uniform"/>
+                </Rectangle.OpacityMask>
+            </Rectangle>
+            <TextBlock x:Name="GuanoHarvestName" HorizontalAlignment="Left" Height="38" Margin="33,486,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" FontSize="16" TextAlignment="Center" Text="{Binding Name}" FontWeight="Bold" FontFamily="Courier New"/>
+            <TextBlock x:Name="GuanoHarvestPopulation" HorizontalAlignment="Left" Height="39" Margin="33,670,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" TextAlignment="Center" FontSize="16" Text="{Binding GuanoAmount}" FontFamily="Courier New"/>
+            <Button x:Name="Harvest" Content="Harvest" HorizontalAlignment="Left" Height="45" Margin="453,670,0,0" VerticalAlignment="Top" Width="211" Click="Harvest_Click" FontFamily="Courier New" FontSize="18" FontWeight="Bold" BorderBrush="Black" Background="White"/>
+            <TextBlock HorizontalAlignment="Left" Height="21" TextWrapping="Wrap" Text="Quantity" VerticalAlignment="Top" Width="90" FontFamily="Courier New" FontWeight="Bold" FontSize="18" Margin="225,129,0,0"/>
+            <Button x:Name="CornHarvestDecreaseQuant" Content="-" HorizontalAlignment="Left" Height="28" VerticalAlignment="Top" Width="28" Click="CornHarvestDecreaseQuant_Click" Margin="320,126,0,0"/>
+            <Button x:Name="CornHarvestIncreaseQuant" Content="+" HorizontalAlignment="Left" Height="28" VerticalAlignment="Top" Width="28" Click="CornHarvestIncreaseQuant_Click" Margin="438,126,0,0"/>
+            <TextBlock x:Name="CornHarvestQuant" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" TextAlignment="Center" FontFamily="Courier New" FontSize="20" FontWeight="Bold" Text="0" Margin="353,128,0,0"/>
+            <TextBlock HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" Text="Quantity" VerticalAlignment="Top" Width="90" FontFamily="Courier New" FontWeight="Bold" FontSize="18" Margin="225,364,0,0"/>
+            <Button x:Name="CottonHarvestDecreaseQuant" Content="-" HorizontalAlignment="Left" Height="28" VerticalAlignment="Top" Width="28" Click="CottonHarvestDecreaseQuant_Click" Margin="320,361,0,0"/>
+            <Button x:Name="CottonHarvestIncreaseQuant" Content="+" HorizontalAlignment="Left" Height="28" VerticalAlignment="Top" Width="28" Click="CottonHarvestIncreaseQuant_Click" Margin="438,361,0,0"/>
+            <TextBlock x:Name="CottonHarvestQuant" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" TextAlignment="Center" FontFamily="Courier New" FontSize="20" FontWeight="Bold" Text="0" Margin="353,364,0,0"/>
+            <TextBlock x:Name="Quantity" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="Quantity" VerticalAlignment="Top" Width="90" FontFamily="Courier New" FontWeight="Bold" FontSize="18" Margin="225,582,0,0"/>
+            <Button x:Name="GuanoHarvestDecreaseQuant" Content="-" HorizontalAlignment="Left" Height="28" VerticalAlignment="Top" Width="28" Click="GuanoHarvestDecreaseQuant_Click" Margin="320,578,0,0"/>
+            <Button x:Name="GuanoHarvestIncreaseQuant" Content="+" HorizontalAlignment="Left" Height="28" VerticalAlignment="Top" Width="28" Click="GuanoHarvestIncreaseQuant_Click" Margin="438,578,0,0"/>
+            <TextBlock x:Name="GuanoHarvestQuant" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" TextAlignment="Center" FontFamily="Courier New" FontSize="20" FontWeight="Bold" Text="0" Margin="353,580,0,0"/>
+            <TextBlock x:Name="ShovelNeeded" HorizontalAlignment="Left" Height="46" Margin="201,572,0,0" TextWrapping="Wrap" Text="Shovel Needed" VerticalAlignment="Top" Width="303" FontFamily="Courier New" FontWeight="Bold" FontSize="38" Visibility="Hidden"/>
+        </Grid>
+        <TextBlock x:Name="EcosystemStatus" HorizontalAlignment="Left" Height="38" Margin="783,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="241" Text="{Binding Status}" FontFamily="Courier New" FontSize="18"/>
     </Grid>
 </Page>

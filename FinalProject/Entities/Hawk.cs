@@ -5,13 +5,12 @@ using System.Text;
 
 namespace FinalProject
 {
-    public class Hawk : Consumer
+    public class Hawk : Consumer, Guano
     {
         static Hawk instance;
         private Hawk()
         {
         }
-
         public static Hawk GetInstance()
         {
             if (instance == null)
@@ -22,12 +21,20 @@ namespace FinalProject
         }
         public override void Eat()
         {
-            Bat.GetInstance().Population -= Population;
+            if(Player.GetInstance().HasOwl == false)
+            {
+                Bat.GetInstance().Population -= Population;
+            }
+            else
+            {
+                Bat.GetInstance().Population -= 0;
+            }
+            
         }
 
-        public override void Reproduce()
+        public int ProduceGuano()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
     }
 }

@@ -10,6 +10,7 @@ namespace FinalProject
         static Cotton instance;
         private Cotton()
         {
+            
         }
 
         public static Cotton GetInstance()
@@ -19,6 +20,17 @@ namespace FinalProject
                 instance = new Cotton();
             }
             return instance;
+        }
+        public override bool CheckRatio()
+        {
+            if (Environment.GetInstance().WaterSupply > 10)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

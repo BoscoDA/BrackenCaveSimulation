@@ -3,9 +3,9 @@
     </entity>
     <entity type="Producer" name="Cotton" species = "Gossypium hirsutum" population = "16200">
     </entity>
-    <entity type="Consumer" name="Corn Earworm" species = "Helicoverpa zea" population = "28000">
+    <entity type="Consumer" name="Corn Earworm" species = "Helicoverpa zea" population = "35000">
     </entity>
-    <entity type="Consumer" name="Cotton Bollworm" species = "Helicoverpa zea" population = "28000">
+    <entity type="Consumer" name="Cotton Bollworm" species = "Helicoverpa zea" population = "35000">
     </entity>
     <entity type="Consumer" name="Brazilian Free-Tailed Bat" species = "Tadarida brasiliensis" population = "15">
     </entity>
@@ -18,11 +18,13 @@
     <entity type="Player" name="Anonymous Player" species = "Human" population = "1">
     </entity>
     <entity type="Vendor" name="Unknown" species = "Human" population = "1">
-        <item name = "Scarecrow" value = "15">
+        <item name = "Corn Seed" value = "0.10" description = "Sweet corn seed straight from Iowa. Grows to a medium height and produces two ears of corn per plant." picture = "/media/bat.png" quantity = "1000000">
         </item>
-        <item name = "Owl decoy" value = "4.5">
+        <item name = "Cotton Seed" value = "0.20" description = "Everything is bigger in Texas, and that even means cottons seends. Texas cotton seeds, yield on average 15 bolls of cotton." picture = "/media/bat.png" quantity = "1000000">
         </item>
-        <item name = "Shovel" value = "6.25">
+        <item name = "Owl Decoy" value = "24.99" description = "A very real looking platic owl. Works great for deterring hawks from any area." picture = "media/corn.png" quantity = "1">
+        </item>
+        <item name = "Shovel" value = "34.25" description = "A shovel, for you know... burrying you pets in a pet cemetary to then come back alive. Or also people..." picture = "media/cotton.png" quantity = "1">
         </item>
     </entity>
 </environment>

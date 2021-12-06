@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FinalProject"
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="1300">
+        Title="MainWindow" Height="825" Width="1325" WindowStartupLocation="CenterScreen">
     <Grid>
-        <DockPanel Width="1300" Height="800" MinWidth="1300" MinHeight="800">
+        <DockPanel Width="1325" Height="825" MinWidth="1325" MinHeight="825">
             <Frame Name="NavigationFrame" NavigationUIVisibility="Hidden"/>
         </DockPanel>
     </Grid>

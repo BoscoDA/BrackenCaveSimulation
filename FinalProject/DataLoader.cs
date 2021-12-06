@@ -77,9 +77,18 @@ namespace FinalProject
                             temp = dermestidBeetle;
                         }
                     }
-                    else if (entity.GetAttribute("type") == "Player" || entity.GetAttribute("type") == "Vendor")
+                    else if (entity.GetAttribute("species") == "Human")
                     {
-                        temp = new Person();
+                        if (entity.GetAttribute("type") == "vender")
+                        {
+                            Vender vender = Vender.GetInstance();
+                            temp = vender;
+                        }
+                        else
+                        {
+                            Person person = Vender.GetInstance();
+                            temp = person;
+                        }
                     }
                     else
                     {
@@ -87,12 +96,67 @@ namespace FinalProject
                     }
                     temp.Name = entity.GetAttribute("name");
                     temp.Species = entity.GetAttribute("species");
+
                     temp.Population = Convert.ToInt32(entity.GetAttribute("population"));
+
+
                     entities.Add(temp);
                 }
             }
             return entities;
         }
 
+        public static List<Item> LoadVenderInventory(string fileName)
+        {
+            List<Item> inventory = new List<Item>();
+            if (File.Exists(fileName))
+            {
+                XmlDocument doc = new XmlDocument();
+                doc.Load(fileName);
+                XmlNode root = doc.DocumentElement;
+                XmlNodeList entityList = root.SelectNodes("/environment/entity");
+                XmlNodeList itemList;
+
+                foreach (XmlElement entity in entityList)
+                {
+                    itemList = entity.ChildNodes;
+                    
+                    foreach (XmlElement item in itemList)
+                    {
+                        Item temp;
+                        if (item.GetAttribute("name") == "Corn Seed")
+                        {
+                            temp = CornSeed.GetInstance();
+                        }
+                        else if (item.GetAttribute("name") == "Cotton Seed")
+                        {
+                            temp = CottonSeed.GetInstance();
+                        }
+                        else if (item.GetAttribute("name") == "Owl Decoy")
+                        {
+                            temp = HawkDeterrents.GetInstance();
+                        }
+                        else if (item.GetAttribute("name") == "Shovel")
+                        {
+                            temp = Shovel.GetInstance();
+                        }
+                        else
+                        {
+                            Item i = new Item();
+                            temp = i;
+                        }
+                        
+                        temp.Name = item.GetAttribute("name");
+                        temp.Value = Convert.ToDouble(item.GetAttribute("value"));
+                        temp.PriceDetail += temp.Value.ToString("c");
+                        temp.Description = item.GetAttribute("description");
+                        temp.Image = item.GetAttribute("picture");
+                        temp.Quantity = Convert.ToInt32(item.GetAttribute("quantity"));
+                        inventory.Add(temp);
+                    }
+                }
+            }
+            return inventory;
+        }
     }
 }

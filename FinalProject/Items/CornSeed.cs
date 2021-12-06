@@ -2,30 +2,31 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace FinalProject
 {
-    public class HawkDeterrents : Item
+    class CornSeed : Item
     {
+        static CornSeed instance;
 
-        static HawkDeterrents instance;
-
-        private HawkDeterrents()
+        private CornSeed()
         {
 
         }
 
-        public static HawkDeterrents GetInstance()
+        public static CornSeed GetInstance()
         {
             if (instance == null)
             {
-                instance = new HawkDeterrents();
+                instance = new CornSeed();
             }
             return instance;
         }
+
         public override void Effect(int quant)
         {
-            Player.GetInstance().HasOwl = true;
+            Corn.GetInstance().Population += quant;
         }
     }
 }

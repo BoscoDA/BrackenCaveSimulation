@@ -5,11 +5,12 @@ using System.Text;
 
 namespace FinalProject
 {
-    public class Bat : Consumer
+    public class Bat : Consumer, Guano
     {
         static Bat instance;
         private Bat()
         {
+
         }
 
         public static Bat GetInstance()
@@ -21,38 +22,47 @@ namespace FinalProject
             return instance;
         }
 
-        public void ProduceGuano()
-        {
-            Environment.GetInstance().GuanoAmount += Population*Utility.Probability.Next(20, 31);
-        }
 
         public override void Eat()
         {
             if (CornWorm.GetInstance().Population > 0 & CottonWorm.GetInstance().Population > 0)
             {
-                for (int i = 0; i < Population; i++)
-                {
-                    CornWorm.GetInstance().Population -= Utility.Probability.Next(10, 21);
-                    CottonWorm.GetInstance().Population -= Utility.Probability.Next(10, 21);
-                }
+                    CornWorm.GetInstance().Population -= 21 * Population;
+                    CottonWorm.GetInstance().Population -= 21 * Population;
+            }
+            else if (CottonWorm.GetInstance().Population == 0 & CornWorm.GetInstance().Population == 0)
+            {
+                Population -= 1;
             }
             else if (CornWorm.GetInstance().Population == 0)
             {
-                CottonWorm.GetInstance().Population -= Utility.Probability.Next(10, 41);
+                CottonWorm.GetInstance().Population -= 42 * Population;
             }
             else if (CottonWorm.GetInstance().Population == 0)
             {
-                CornWorm.GetInstance().Population -= Utility.Probability.Next(10, 41);
-            }
-            else
-            {
-                Population -= 1;
+                CornWorm.GetInstance().Population -= 42 * Population;
             }
         }
 
         public override void Reproduce()
         {
             Population += Population;
+        }
+
+        public int ProduceGuano()
+        {
+            return Population * Utility.Probability.Next(20, 31);
+        }
+        public override bool CheckRatio()
+        {
+            if (CornWorm.GetInstance().Population + CottonWorm.GetInstance().Population > 42 * Population & Population > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

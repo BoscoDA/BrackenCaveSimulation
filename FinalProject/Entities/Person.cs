@@ -7,6 +7,10 @@ namespace FinalProject
 {
     public class Person : Entity
     {
-        List<Item> inventory = new List<Item>();
+        private List<Item> inventory = new List<Item>();
+        private double money;
+        public List<Item> Inventory { get => inventory; set => inventory = value; }
+        public double Money { get => money; set => money = value;}
+        
     }
 }

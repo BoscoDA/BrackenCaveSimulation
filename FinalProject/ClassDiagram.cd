@@ -3,21 +3,28 @@
   <Class Name="FinalProject.Environment" Collapsed="true">
     <Position X="23.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AACAIAAAgCAAAAAAAAAAAgAAAAIAAQAAQAUAAEAEAAA=</HashCode>
+      <HashCode>AACAIAAAgCAAAAAAAAAgAAQAJABEAQAAQAUAAEAEAAA=</HashCode>
       <FileName>Environment.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FinalProject.Entity">
     <Position X="10.75" Y="0.5" Width="2" />
+    <NestedTypes>
+      <Class Name="FinalProject.Entity.AmountChangedEventArgs" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Entities\Entity.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAEAAAAAAgAAAAIAAAAAAQAAAAEAAAAAAAAAAAABAA=</HashCode>
+      <HashCode>AAAMCAAEAAgAAEAIAAAAAAQAAAAEAAAAAAAAAAAABAA=</HashCode>
       <FileName>Entities\Entity.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FinalProject.Item">
     <Position X="3.75" Y="8.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAEACAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAQAAAAEACAAAAAgAAAAAAA=</HashCode>
       <FileName>Items\Item.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -31,7 +38,7 @@
   <Class Name="FinalProject.Consumer">
     <Position X="13.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAgAAAAAEAAAUAAgAEAAAAAAAAAEAAAABAAAAAAIAAA=</HashCode>
+      <HashCode>AAAAAAAAEAAAEAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\Consumer.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -45,14 +52,14 @@
   <Class Name="FinalProject.Player">
     <Position X="8" Y="5.25" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAQAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAQAAABAAAAAAAAAAAAABABAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\Player.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FinalProject.Vender">
     <Position X="5.75" Y="5.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAIAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAIAAAAAAAAAAAAAQAAAAAAABABAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\Vender.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -73,7 +80,7 @@
   <Class Name="FinalProject.Worm">
     <Position X="10.75" Y="7.5" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAEAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\Worm.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -119,24 +126,17 @@
       <FileName>Items\Guano.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="FinalProject.SmallAnimal">
-    <Position X="7.25" Y="11" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Items\SmallAnimal.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="FinalProject.Weather" Collapsed="true">
     <Position X="25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ACAAAAAFAAAAAAAAAAAAAAAAAQYAAAAAAAAAAgAAAAA=</HashCode>
+      <HashCode>ACAAAAAFAAAAAAAAAAAAAAAAIQYAAAAAAAAAAgAAAAA=</HashCode>
       <FileName>Weather.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FinalProject.Person">
     <Position X="6.75" Y="3.25" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAA=</HashCode>
       <FileName>Entities\Person.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -150,21 +150,21 @@
   <Class Name="FinalProject.DermestidBeetle">
     <Position X="18.5" Y="8.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAABABAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\DermestidBeetle.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FinalProject.CornWorm">
     <Position X="10" Y="10.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABABAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAABABAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\CornWorm.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FinalProject.CottonWorm">
     <Position X="12" Y="10.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABABAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAABABAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\CottonWorm.cs</FileName>
     </TypeIdentifier>
   </Class>

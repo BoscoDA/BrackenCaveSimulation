@@ -11,6 +11,7 @@ namespace FinalProject
         static GuanoBeetle instance;
         private GuanoBeetle()
         {
+
         }
 
         public static GuanoBeetle GetInstance()
@@ -23,7 +24,26 @@ namespace FinalProject
         }
         public override void Eat()
         {
-            Environment.GetInstance().GuanoAmount -= 3*Population;
+            if(Environment.GetInstance().GuanoAmount > 0)
+            {
+                Environment.GetInstance().GuanoAmount -= 3 * Population; ;
+            }
+            else
+            {
+                Population -= 10;
+            }
+            
+        }
+        public override bool CheckRatio()
+        {
+            if(Environment.GetInstance().GuanoAmount > 3 * Population & Population > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

@@ -7,15 +7,25 @@ namespace FinalProject
 {
     public class Player : Person
     {
+        static Player instance;
+        private bool hasShovel = false;
+        private bool hasOwl = false;
 
-        public void UseItem()
+        public bool HasShovel { get => hasShovel; set => hasShovel = value; }
+        public bool HasOwl { get => hasOwl; set => hasOwl = value; }
+
+        private Player()
         {
-            throw new System.NotImplementedException();
         }
 
-        public void HarvestMaterial()
+        public static Player GetInstance()
         {
-            throw new System.NotImplementedException();
+            if (instance == null)
+            {
+                instance = new Player();
+            }
+            return instance;
         }
+
     }
 }

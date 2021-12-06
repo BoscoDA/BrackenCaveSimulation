@@ -10,6 +10,7 @@ namespace FinalProject
         static CottonWorm instance;
         private CottonWorm()
         {
+
         }
         public static CottonWorm GetInstance()
         {
@@ -22,8 +23,26 @@ namespace FinalProject
 
         public override void Eat()
         {
-            Cotton.GetInstance().Population -= 50 * (Population / 27000);
+            
+            if (Cotton.GetInstance().Population > 0)
+            {
+                Cotton.GetInstance().Population -= 1;
+            }
+            else
+            {
+                Population -= 1000;
+            }
         }
-
+        public override bool CheckRatio()
+        {
+            if (Cotton.GetInstance().Population > 1 & Population > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }
